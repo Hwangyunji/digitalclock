@@ -9,6 +9,12 @@ $(function(){
         let h = d.getHours(); // 시간
         let m = d.getMinutes(); // 분
         let s = d.getSeconds(); // 초
+    
+        let month = d.getMonth() + 1;
+        let date = d.getDate();
+
+        $('.month').html(month);
+        $('.date').html(date);
 
         // 0 ~ 9까지는 앞에 0 표시
         if(s < 10) {
